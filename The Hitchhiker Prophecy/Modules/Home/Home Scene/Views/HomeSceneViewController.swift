@@ -10,36 +10,22 @@ import UIKit
 
 class HomeSceneViewController: UIViewController {
 
-    // MARK: Outlets
+    // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
+    // MARK: - Properties
     var interactor: HomeSceneBusinessLogic?
     var router: HomeSceneRoutingLogic?
+    var collectionViewLayoutState: BaseCollectionViewLayoutState?
     private var characters = [HomeScene.Search.ViewModel]()
-    private lazy var collectionViewHorizontalLayout: UICollectionViewFlowLayout = {
-        let collectionFlowLayout = UICollectionViewFlowLayout()
-        collectionFlowLayout.scrollDirection = .horizontal
-        collectionFlowLayout.sectionInset = UIEdgeInsets(
-            top: 0,
-            left: 12,
-            bottom: 0,
-            right: 12
-        )
-        collectionFlowLayout.itemSize = CGSize(
-            width: collectionView.frame.width * 0.8,
-            height: collectionView.frame.height
-        )
-        collectionFlowLayout.minimumInteritemSpacing = 0
-        collectionFlowLayout.minimumLineSpacing = 24
-        return collectionFlowLayout
-    }()
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCellsOnCollectionView()
         fetchCharacters()
+        setupCollectionViewAsHorizontalInitially()
     }
     private func registerCellsOnCollectionView(){
         collectionView.register(
@@ -51,13 +37,15 @@ class HomeSceneViewController: UIViewController {
         activityIndicator.startAnimating()
         interactor?.fetchCharacters()
     }
-    
+    private func setupCollectionViewAsHorizontalInitially(){
+        collectionViewLayoutState = VerticalCollectionViewLayoutState(self)
+    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        configCollectionViewAsHorizontal()
+        collectionViewLayoutState?.setLayout()
     }
-    private func configCollectionViewAsHorizontal(){
-        collectionView.collectionViewLayout = collectionViewHorizontalLayout
+    @objc func switchLayoutHandler(){
+        collectionViewLayoutState?.switchLayout()
     }
 }
 
@@ -66,8 +54,17 @@ extension HomeSceneViewController: HomeSceneDisplayView {
         activityIndicator.stopAnimating()
         self.characters = viewModel
         collectionView.reloadData()
+        revealChangeLayoutButton()
     }
-    
+    private func revealChangeLayoutButton(){
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Change Layout",
+            style: .plain,
+            target: self,
+            action: #selector(switchLayoutHandler)
+        )
+    }
+
     func failedToFetchCharacters(error: Error) {
         // TODO: Implement
     }
