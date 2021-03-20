@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NG3-Qs-w1d">
-                    <rect key="frame" x="0.0" y="44" width="414" height="808"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Xxn-Hc-08O">
                         <size key="itemSize" width="128" height="128"/>
@@ -36,16 +35,16 @@
                 </collectionView>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="2P4-ru-7oD">
                     <rect key="frame" x="197" y="438" width="20" height="20"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="p9K-a1-ut4"/>
             <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
             <constraints>
+                <constraint firstItem="p9K-a1-ut4" firstAttribute="bottom" secondItem="NG3-Qs-w1d" secondAttribute="bottom" id="Iao-WU-YLV"/>
                 <constraint firstItem="2P4-ru-7oD" firstAttribute="centerY" secondItem="WGk-3c-KKJ" secondAttribute="centerY" id="Nir-KM-6AB"/>
                 <constraint firstItem="NG3-Qs-w1d" firstAttribute="top" secondItem="p9K-a1-ut4" secondAttribute="top" id="OE4-CV-sfQ"/>
                 <constraint firstItem="2P4-ru-7oD" firstAttribute="centerX" secondItem="WGk-3c-KKJ" secondAttribute="centerX" id="Pvl-wi-O98"/>
-                <constraint firstItem="NG3-Qs-w1d" firstAttribute="centerY" secondItem="WGk-3c-KKJ" secondAttribute="centerY" id="dTG-PZ-N8B"/>
                 <constraint firstItem="NG3-Qs-w1d" firstAttribute="leading" secondItem="p9K-a1-ut4" secondAttribute="leading" id="did-7w-iT2"/>
                 <constraint firstItem="NG3-Qs-w1d" firstAttribute="centerX" secondItem="WGk-3c-KKJ" secondAttribute="centerX" id="o8b-b6-bJM"/>
             </constraints>
@@ -54,9 +53,6 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.1215686274509804" green="0.12941176470588239" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
