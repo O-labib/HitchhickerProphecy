@@ -8,6 +8,12 @@
 
 import UIKit
 
+extension HomeCharacterCollectionViewCell {
+    static var id: String = String(describing: HomeCharacterCollectionViewCell.self)
+    private static var nibFileName: String = id
+    static var nib = UINib(nibName: nibFileName, bundle: nil)
+}
+
 class HomeCharacterCollectionViewCell: UICollectionViewCell {
     // MARK: - Outlets
     @IBOutlet private weak var characterNameLabel: UILabel!
