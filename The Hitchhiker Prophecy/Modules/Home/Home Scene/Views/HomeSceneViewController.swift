@@ -86,3 +86,14 @@ extension HomeSceneViewController: UICollectionViewDataSource {
     }
     
 }
+
+extension HomeSceneViewController: UIScrollViewDelegate {
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        collectionView?.scrollToNearestCellIfHasHorizontalLayout()
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        collectionView?.scrollToNearestCellIfHasHorizontalLayout()
+    }
+}
