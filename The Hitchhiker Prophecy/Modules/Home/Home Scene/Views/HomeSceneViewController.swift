@@ -87,6 +87,12 @@ extension HomeSceneViewController: UICollectionViewDataSource {
     
 }
 
+extension HomeSceneViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        router?.routeToCharacterDetailsWithCharacter(at: indexPath.item)
+    }
+}
+
 extension HomeSceneViewController: UIScrollViewDelegate {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
