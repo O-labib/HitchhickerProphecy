@@ -38,7 +38,7 @@ class HomeSceneViewController: UIViewController {
         interactor?.fetchCharacters()
     }
     private func setupCollectionViewAsHorizontalInitially(){
-        collectionViewLayoutState = VerticalCollectionViewLayoutState(self)
+        collectionViewLayoutState = HorizontalCollectionViewLayoutState(self)
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
