@@ -20,8 +20,8 @@ class HomeScenePresneter: HomeScenePresentationLogic {
             case .success(let output):
                 let viewSuccessModel = output.data.results.map(createHomeSceneViewModel(from:))
                 displayView?.didFetchCharacters(viewModel: viewSuccessModel)
-            case .failure:
-                // FIXME: Handle Error
+            case .failure(let error):
+                displayView?.failedToFetchCharacters(error: error)
                 break
         }
     }

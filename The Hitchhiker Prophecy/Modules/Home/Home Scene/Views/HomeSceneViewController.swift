@@ -66,7 +66,26 @@ extension HomeSceneViewController: HomeSceneDisplayView {
     }
 
     func failedToFetchCharacters(error: Error) {
-        // TODO: Implement
+        displayAlert(withError: error)
+    }
+    private func displayAlert(withError error: Error){
+        let alert = UIAlertController(
+            title: "Error",
+            message: error.localizedDescription,
+            preferredStyle: .alert
+        )
+        let retryAction = UIAlertAction(
+            title: "Retry",
+            style: .default
+        ) { (_) in
+            self.fetchCharacters()
+        }
+        if let popoverPresentationController = alert.popoverPresentationController {
+            popoverPresentationController.sourceView = self.view
+            popoverPresentationController.sourceRect = self.view.bounds
+        }
+        alert.addAction(retryAction)
+        present(alert, animated: true, completion: nil)
     }
 }
 
