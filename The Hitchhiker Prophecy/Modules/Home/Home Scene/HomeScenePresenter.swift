@@ -42,9 +42,9 @@ class HomeScenePresneter: HomeScenePresentationLogic {
 private extension Characters.Search.Character.Thumbnail {
     var uncannyPortraitImageUrl: String {
         """
-            \(path)
-            /\(CharacterDetailsScene.Constants.ImageSize.Portrait.uncanny.rawValue)
-            .\(thumbnailExtension)
+        \(path)\
+        /\(CharacterDetailsScene.Constants.ImageSize.Portrait.uncanny.rawValue)\
+        .\(thumbnailExtension)
         """
     }
 }
