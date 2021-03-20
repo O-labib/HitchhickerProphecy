@@ -16,6 +16,35 @@ class HomeScenePresneter: HomeScenePresentationLogic {
     }
     
     func presentCharacters(_ response: HomeScene.Search.Response) {
-        // TODO: Implement
+        switch response {
+            case .success(let output):
+                let viewSuccessModel = output.data.results.map(createHomeSceneViewModel(from:))
+                displayView?.didFetchCharacters(viewModel: viewSuccessModel)
+            case .failure:
+                // FIXME: Handle Error
+                break
+        }
+    }
+    
+    private func createHomeSceneViewModel(from character: Characters.Search.Character) -> HomeScene.Search.ViewModel {
+        return HomeScene.Search.ViewModel(
+            name: character.name,
+            desc: character.resultDescription,
+            imageUrl: character.thumbnail.uncannyPortraitImageUrl,
+            comics: character.comics.collectionURI,
+            series: character.series.collectionURI,
+            stories: character.stories.collectionURI,
+            events: character.events.collectionURI
+        )
+    }
+}
+
+private extension Characters.Search.Character.Thumbnail {
+    var uncannyPortraitImageUrl: String {
+        """
+            \(path)
+            /\(CharacterDetailsScene.Constants.ImageSize.Portrait.uncanny.rawValue)
+            .\(thumbnailExtension)
+        """
     }
 }
