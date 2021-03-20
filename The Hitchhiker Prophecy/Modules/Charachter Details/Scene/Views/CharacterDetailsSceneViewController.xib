@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,38 +22,37 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jdp-yT-HW1">
-                    <rect key="frame" x="0.0" y="36" width="414" height="591.5"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e54-0T-eAR">
-                    <rect key="frame" x="174" y="562" width="66.5" height="33.5"/>
+                    <rect key="frame" x="173.5" y="776" width="67" height="33.5"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQC-3T-fBH">
-                    <rect key="frame" x="16" y="643.5" width="382" height="20.5"/>
+                    <rect key="frame" x="16" y="825.5" width="382" height="20.5"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SQC-3T-fBH" secondAttribute="trailing" constant="16" id="3pR-PO-Ynu"/>
-                <constraint firstItem="Jdp-yT-HW1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-8" id="4I1-7M-sDi"/>
+                <constraint firstItem="Jdp-yT-HW1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4I1-7M-sDi"/>
                 <constraint firstItem="e54-0T-eAR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="9cV-PV-Pfb"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SQC-3T-fBH" secondAttribute="bottom" constant="16" id="HNg-IH-CuI"/>
-                <constraint firstItem="SQC-3T-fBH" firstAttribute="top" secondItem="Jdp-yT-HW1" secondAttribute="bottom" constant="16" id="Hdm-Ka-wzz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="SQC-3T-fBH" secondAttribute="bottom" constant="16" id="HNg-IH-CuI"/>
                 <constraint firstItem="e54-0T-eAR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I7y-ES-t5Q"/>
                 <constraint firstItem="SQC-3T-fBH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="J3t-bG-Z8s"/>
+                <constraint firstItem="SQC-3T-fBH" firstAttribute="top" secondItem="e54-0T-eAR" secondAttribute="bottom" constant="16" id="QVD-A0-tXt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="e54-0T-eAR" secondAttribute="trailing" constant="16" id="U5g-Pz-7vk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jdp-yT-HW1" secondAttribute="trailing" id="aY3-nP-g0d"/>
-                <constraint firstItem="Jdp-yT-HW1" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.66" id="arA-b0-2Vt"/>
                 <constraint firstItem="Jdp-yT-HW1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="flN-GU-okh"/>
-                <constraint firstItem="e54-0T-eAR" firstAttribute="bottom" secondItem="Jdp-yT-HW1" secondAttribute="bottom" constant="-32" id="ix3-SC-HM4"/>
+                <constraint firstAttribute="bottom" secondItem="Jdp-yT-HW1" secondAttribute="bottom" id="g3Z-m0-wNm"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="151"/>
+            <point key="canvasLocation" x="137.68115942028987" y="150.66964285714286"/>
         </view>
     </objects>
 </document>

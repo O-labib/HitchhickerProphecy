@@ -18,6 +18,7 @@ class HomeSceneViewController: UIViewController {
     var interactor: HomeSceneBusinessLogic?
     var router: HomeSceneRoutingLogic?
     var collectionViewLayoutState: BaseCollectionViewLayoutState?
+    private let shotAnimator = ShotAnimator()
     private var characters = [HomeScene.Search.ViewModel]()
     
     // MARK: - Life Cycle
@@ -108,7 +109,12 @@ extension HomeSceneViewController: UICollectionViewDataSource {
 
 extension HomeSceneViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        setShotAnimatorOriginalFrame(forCellAt: indexPath)
         router?.routeToCharacterDetailsWithCharacter(at: indexPath.item)
+    }
+    private func setShotAnimatorOriginalFrame(forCellAt indexPath: IndexPath){
+        guard let cell = collectionView.cellForItem(at: indexPath) as? HomeCharacterCollectionViewCell else { return }
+        shotAnimator.originalFrame = cell.imageViewFrameAdjusted
     }
 }
 
@@ -120,5 +126,11 @@ extension HomeSceneViewController: UIScrollViewDelegate {
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         collectionView?.scrollToNearestCellIfHasHorizontalLayout()
+    }
+}
+
+extension HomeSceneViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        shotAnimator
     }
 }

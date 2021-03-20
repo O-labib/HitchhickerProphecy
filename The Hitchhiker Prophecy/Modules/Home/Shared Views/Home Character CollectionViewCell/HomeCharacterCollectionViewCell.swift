@@ -14,6 +14,12 @@ extension HomeCharacterCollectionViewCell {
     static var nib = UINib(nibName: nibFileName, bundle: nil)
 }
 
+extension HomeCharacterCollectionViewCell {
+    var imageViewFrameAdjusted: CGRect {
+        convert(characterImageView.frame, to: nil)
+    }
+}
+
 class HomeCharacterCollectionViewCell: UICollectionViewCell {
     // MARK: - Outlets
     @IBOutlet private weak var characterNameLabel: UILabel!

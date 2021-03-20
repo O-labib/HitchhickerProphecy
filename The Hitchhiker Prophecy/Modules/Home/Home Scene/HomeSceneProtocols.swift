@@ -38,7 +38,7 @@ protocol HomeSceneDataPassing: class {
 }
 
 protocol HomeSceneRoutingLogic: class {
-    var viewController: (HomeSceneDisplayView & UIViewController)? { get }
+    var viewController: (HomeSceneDisplayView & UIViewController & UIViewControllerTransitioningDelegate)? { get }
     
     func routeToCharacterDetailsWithCharacter(at index: Int)
 }
