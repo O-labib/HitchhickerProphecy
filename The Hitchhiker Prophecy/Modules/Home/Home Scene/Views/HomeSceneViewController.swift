@@ -61,7 +61,7 @@ class HomeSceneViewController: UIViewController {
         isHorizontalLayout ? verticalLayout : horizontalLayout
     }
 }
-
+// MARK: - HomeSceneDisplayView
 extension HomeSceneViewController: HomeSceneDisplayView {
     func didFetchCharacters(viewModel: [HomeScene.Search.ViewModel]) {
         activityIndicator.stopAnimating()
@@ -103,6 +103,7 @@ extension HomeSceneViewController: HomeSceneDisplayView {
     }
 }
 
+// MARK: - UICollectionViewDataSource
 extension HomeSceneViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -120,7 +121,9 @@ extension HomeSceneViewController: UICollectionViewDataSource {
     
 }
 
+// MARK: - UICollectionViewDelegate
 extension HomeSceneViewController: UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         setShotAnimatorOriginalFrame(forCellAt: indexPath)
         router?.routeToCharacterDetailsWithCharacter(at: indexPath.item)
@@ -131,6 +134,7 @@ extension HomeSceneViewController: UICollectionViewDelegate {
     }
 }
 
+// MARK: - UIScrollViewDelegate
 extension HomeSceneViewController: UIScrollViewDelegate {
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
@@ -142,6 +146,7 @@ extension HomeSceneViewController: UIScrollViewDelegate {
     }
 }
 
+// MARK: - UIViewControllerTransitioningDelegate
 extension HomeSceneViewController: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         shotAnimator

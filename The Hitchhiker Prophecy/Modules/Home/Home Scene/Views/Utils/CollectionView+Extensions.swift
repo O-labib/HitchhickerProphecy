@@ -12,6 +12,8 @@ extension UICollectionView {
     private var isHorizontal: Bool {
         (collectionViewLayout as? UICollectionViewFlowLayout)?.scrollDirection == .horizontal
     }
+    
+    /// snap the closest cell to the centre only if collection view has horizontal layout
     func scrollToNearestCellIfHasHorizontalLayout() {
         guard isHorizontal else { return }
         
