@@ -9,12 +9,12 @@
 import Foundation
 @testable import The_Hitchhiker_Prophecy
 
-class MockedInteractor: HomeSceneBusinessLogic {
+class MockedHomeSceneInteractor: HomeSceneBusinessLogic {
     var worker: HomeWorkerType
     var presenter: HomeScenePresentationLogic
     
     init() {
-        presenter = MockedPresenter()
+        presenter = MockedHomeScenePresenter()
         worker = MockedWorkerForSuccess()
     }
 

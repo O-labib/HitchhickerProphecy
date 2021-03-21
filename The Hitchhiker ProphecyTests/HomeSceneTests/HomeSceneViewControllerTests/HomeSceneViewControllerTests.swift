@@ -11,15 +11,15 @@ import XCTest
 
 class HomeSceneViewControllerTests: XCTestCase {
 
-    let vc = HomeSceneViewController()
-    let router = MockedRouter()
-    let interactor = MockedInteractor()
+    private let homeSceneViewController = HomeSceneViewController()
+    private let router = MockedHomeSceneRouterRouter()
+    private let interactor = MockedHomeSceneInteractor()
     
     override func setUpWithError() throws {
-        vc.router = router
-        vc.interactor = interactor
-        (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = vc
-        _ = vc.view
+        homeSceneViewController.router = router
+        homeSceneViewController.interactor = interactor
+        (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = homeSceneViewController
+        _ = homeSceneViewController.view
     }
 
     override func tearDownWithError() throws {
@@ -34,14 +34,14 @@ class HomeSceneViewControllerTests: XCTestCase {
     
     func test_didFetchCharacters_displayCorrectResultsOnCollectionView() throws {
         let anyThreeResults = HomeScene.Search.ViewModel.anyThreeItems
-        vc.didFetchCharacters(viewModel: anyThreeResults)
+        homeSceneViewController.didFetchCharacters(viewModel: anyThreeResults)
         XCTAssert(
-            vc.collectionView.numberOfItems(inSection: 0) == 3,
+            homeSceneViewController.collectionView.numberOfItems(inSection: 0) == 3,
             "Wrong number of items displayed on the collection view"
             )
         
         XCTAssert(
-            vc.collectionView(vc.collectionView,
+            homeSceneViewController.collectionView(homeSceneViewController.collectionView,
                               cellForItemAt: .init(row: 0, section: 0)) is HomeCharacterCollectionViewCell,
             "Wrong collectionView cell returned for data loaded"
             )
@@ -49,7 +49,7 @@ class HomeSceneViewControllerTests: XCTestCase {
     }
     
     func test_cellTap_callsRouterSuccessfully() throws {
-        vc.collectionView(vc.collectionView, didSelectItemAt: IndexPath(row: 0, section: 0))
+        homeSceneViewController.collectionView(homeSceneViewController.collectionView, didSelectItemAt: IndexPath(row: 0, section: 0))
         XCTAssert(
             router.didRouteToCharacterDetails,
             "Tapping a cell should route to character details"
@@ -57,11 +57,11 @@ class HomeSceneViewControllerTests: XCTestCase {
     }
     
     func test_onError_DisplaysAlert() throws {
-        vc.failedToFetchCharacters(error: NetworkError.server)
+        homeSceneViewController.failedToFetchCharacters(error: NetworkError.server)
         let expectation = XCTestExpectation(description: "testErrorDisplaysAlert")
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
             XCTAssertTrue(
-                self.vc.presentedViewController is UIAlertController,
+                self.homeSceneViewController.presentedViewController is UIAlertController,
                 "No alerts ware presented on error"
                 )
             expectation.fulfill()
@@ -70,9 +70,9 @@ class HomeSceneViewControllerTests: XCTestCase {
     }
     
     func testSwitchCollectionViewLayout() throws {
-        let initialLayout = vc.currentCollectionViewLayout()
-        vc.switchLayoutHandler()
-        let finalLayout = vc.currentCollectionViewLayout()
+        let initialLayout = homeSceneViewController.currentCollectionViewLayout()
+        homeSceneViewController.switchLayoutHandler()
+        let finalLayout = homeSceneViewController.currentCollectionViewLayout()
         XCTAssert(
             initialLayout != finalLayout,
             "CollectionView layout was not switched successfully"

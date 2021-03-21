@@ -9,7 +9,7 @@
 import Foundation
 @testable import The_Hitchhiker_Prophecy
 
-class HomeSceneMockedView: HomeSceneDisplayView {
+class MockedHomeSceneView: HomeSceneDisplayView {
     var interactor: HomeSceneBusinessLogic?
     var router: HomeSceneRoutingLogic?
     

@@ -11,9 +11,9 @@ import XCTest
 
 class HomeSceneRouterTests: XCTestCase {
 
-    let router = HomeSceneRouter()
-    let mockedViewController = MockedView()
-    let mockedDataStore = MockedDataStore()
+    private let router = HomeSceneRouter()
+    private let mockedViewController = MockedHomeSceneViewController()
+    private let mockedDataStore = MockedDataStore()
     
     override func setUpWithError() throws {
         router.viewController = mockedViewController

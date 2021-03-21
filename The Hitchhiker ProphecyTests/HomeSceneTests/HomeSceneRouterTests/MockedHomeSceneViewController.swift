@@ -9,7 +9,7 @@
 import UIKit
 @testable import The_Hitchhiker_Prophecy
 
-class MockedView: UIViewController, UIViewControllerTransitioningDelegate, HomeSceneDisplayView {
+class MockedHomeSceneViewController: UIViewController, UIViewControllerTransitioningDelegate, HomeSceneDisplayView {
     var interactor: HomeSceneBusinessLogic?
     var router: HomeSceneRoutingLogic?
     func didFetchCharacters(viewModel: [HomeScene.Search.ViewModel]) { }

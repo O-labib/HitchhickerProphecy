@@ -11,8 +11,8 @@ import XCTest
 
 class HomeSceneInteractorTests: XCTestCase {
 
-    let mockedPresenter = MockedPresenter()
-    var interactor: HomeSceneBusinessLogic!
+    private var interactor: HomeSceneBusinessLogic!
+    private let mockedPresenter = MockedHomeScenePresenter()
     
     override func setUpWithError() throws { }
     override func tearDownWithError() throws {}

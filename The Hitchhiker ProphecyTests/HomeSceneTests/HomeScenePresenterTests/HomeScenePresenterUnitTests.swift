@@ -11,8 +11,8 @@ import XCTest
 
 class HomeScenePresenterUnitTests: XCTestCase {
 
-    private let mockedView = HomeSceneMockedView()
     private var presenter: HomeScenePresentationLogic!
+    private let mockedView = MockedHomeSceneView()
     
     override func setUpWithError() throws {
         presenter = HomeScenePresneter(displayView: mockedView)

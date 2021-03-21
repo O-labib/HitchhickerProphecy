@@ -9,7 +9,7 @@
 import UIKit
 @testable import The_Hitchhiker_Prophecy
 
-class MockedRouter: HomeSceneRoutingLogic {
+class MockedHomeSceneRouterRouter: HomeSceneRoutingLogic {
     
     var viewController: (UIViewController & HomeSceneDisplayView & UIViewControllerTransitioningDelegate)?
     

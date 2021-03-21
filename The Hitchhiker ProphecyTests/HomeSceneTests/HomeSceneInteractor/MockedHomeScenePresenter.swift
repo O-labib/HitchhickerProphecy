@@ -9,7 +9,7 @@
 import Foundation
 @testable import The_Hitchhiker_Prophecy
 
-class MockedPresenter: HomeScenePresentationLogic {
+class MockedHomeScenePresenter: HomeScenePresentationLogic {
     var displayView: HomeSceneDisplayView?
     
     var presentCharactersWasCalled = false
