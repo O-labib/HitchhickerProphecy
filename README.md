@@ -2,9 +2,8 @@
 
 ### Working demo
 <p align="center">
-<img src="https://media.giphy.com/media/oAI0ukufDwldpNVt9u/giphy.gif">
+<img src=https://media.giphy.com/media/KLnLsrwfPFUGuXAn2N/giphy.gif>
 </p>
-
 
 ### Task milestones (aligned with git log):
 * config networking
