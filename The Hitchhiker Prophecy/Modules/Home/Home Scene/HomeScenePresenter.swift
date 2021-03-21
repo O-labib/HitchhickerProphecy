@@ -22,7 +22,6 @@ class HomeScenePresneter: HomeScenePresentationLogic {
                 displayView?.didFetchCharacters(viewModel: viewSuccessModel)
             case .failure(let error):
                 displayView?.failedToFetchCharacters(error: error)
-                break
         }
     }
     

@@ -27,14 +27,24 @@
 		01D65F64249138A30082F8FF /* HomeSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D65F63249138A30082F8FF /* HomeSceneViewController.swift */; };
 		01D65F69249138AD0082F8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01D65F68249138AD0082F8FF /* Assets.xcassets */; };
 		01D65F6C249138AD0082F8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D65F6A249138AD0082F8FF /* LaunchScreen.storyboard */; };
-		01D65F7A24913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */; };
 		01D65F8224913B760082F8FF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D65F8124913B760082F8FF /* SessionManager.swift */; };
 		01D65F8424913BD40082F8FF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D65F8324913BD40082F8FF /* Request.swift */; };
 		040EC9CE26062059002C69A4 /* CollectionViewLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EC9CD26062059002C69A4 /* CollectionViewLayoutHelper.swift */; };
 		040EC9DA260630DA002C69A4 /* CollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EC9D9260630DA002C69A4 /* CollectionView+Extensions.swift */; };
 		040EC9DF26065E3A002C69A4 /* ShotAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EC9DE26065E3A002C69A4 /* ShotAnimator.swift */; };
+		040EC9E7260679E2002C69A4 /* HomeScenePresenterUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EC9E6260679E2002C69A4 /* HomeScenePresenterUnitTests.swift */; };
+		040EC9ED26067A45002C69A4 /* HomeSceneMockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EC9EC26067A45002C69A4 /* HomeSceneMockedView.swift */; };
+		040EC9F326067DED002C69A4 /* ModelsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EC9F226067DED002C69A4 /* ModelsMock.swift */; };
+		040EC9F8260680B3002C69A4 /* HomeSceneInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EC9F7260680B3002C69A4 /* HomeSceneInteractorTests.swift */; };
+		040EC9FE260680DF002C69A4 /* MockedWorkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040EC9FD260680DF002C69A4 /* MockedWorkers.swift */; };
+		040ECA0226068116002C69A4 /* MockedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ECA0126068116002C69A4 /* MockedPresenter.swift */; };
+		040ECA07260681EF002C69A4 /* HomeSceneRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ECA06260681EF002C69A4 /* HomeSceneRouterTests.swift */; };
+		040ECA0D260685BE002C69A4 /* MockedDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ECA0C260685BE002C69A4 /* MockedDataStore.swift */; };
+		040ECA11260685DA002C69A4 /* MockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ECA10260685DA002C69A4 /* MockedView.swift */; };
+		040ECA16260686F3002C69A4 /* HomeSceneViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ECA15260686F3002C69A4 /* HomeSceneViewControllerTests.swift */; };
+		040ECA2026068900002C69A4 /* MockedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ECA1F26068900002C69A4 /* MockedInteractor.swift */; };
+		040ECA24260689B5002C69A4 /* MockedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040ECA23260689B5002C69A4 /* MockedRouter.swift */; };
 		049D8A5726060B3700C26189 /* HomeCharacterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */; };
-		049D8A632606107300C26189 /* CollectionViewLayoutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049D8A622606107300C26189 /* CollectionViewLayoutState.swift */; };
 		2672FB04F0784817B75E3479 /* Pods_The_Hitchhiker_Prophecy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1E5FE548ED38E3378377CEA /* Pods_The_Hitchhiker_Prophecy.framework */; };
 		76A9C3C224A40FB4001E707F /* HomeSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76A9C3C124A40FB4001E707F /* HomeSceneViewController.xib */; };
 		76C7AE382497AD910053EF25 /* CharacterDetailsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE362497AD910053EF25 /* CharacterDetailsSceneViewController.swift */; };
@@ -85,14 +95,24 @@
 		01D65F6B249138AD0082F8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01D65F6D249138AD0082F8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D65F7724913A160082F8FF /* The Hitchhiker ProphecyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Hitchhiker ProphecyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Hitchhiker_ProphecyTests.swift; sourceTree = "<group>"; };
 		01D65F7B24913A160082F8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D65F8124913B760082F8FF /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		01D65F8324913BD40082F8FF /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		040EC9CD26062059002C69A4 /* CollectionViewLayoutHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayoutHelper.swift; sourceTree = "<group>"; };
 		040EC9D9260630DA002C69A4 /* CollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		040EC9DE26065E3A002C69A4 /* ShotAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotAnimator.swift; sourceTree = "<group>"; };
-		049D8A622606107300C26189 /* CollectionViewLayoutState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayoutState.swift; sourceTree = "<group>"; };
+		040EC9E6260679E2002C69A4 /* HomeScenePresenterUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScenePresenterUnitTests.swift; sourceTree = "<group>"; };
+		040EC9EC26067A45002C69A4 /* HomeSceneMockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneMockedView.swift; sourceTree = "<group>"; };
+		040EC9F226067DED002C69A4 /* ModelsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsMock.swift; sourceTree = "<group>"; };
+		040EC9F7260680B3002C69A4 /* HomeSceneInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneInteractorTests.swift; sourceTree = "<group>"; };
+		040EC9FD260680DF002C69A4 /* MockedWorkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedWorkers.swift; sourceTree = "<group>"; };
+		040ECA0126068116002C69A4 /* MockedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedPresenter.swift; sourceTree = "<group>"; };
+		040ECA06260681EF002C69A4 /* HomeSceneRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneRouterTests.swift; sourceTree = "<group>"; };
+		040ECA0C260685BE002C69A4 /* MockedDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedDataStore.swift; sourceTree = "<group>"; };
+		040ECA10260685DA002C69A4 /* MockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedView.swift; sourceTree = "<group>"; };
+		040ECA15260686F3002C69A4 /* HomeSceneViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSceneViewControllerTests.swift; sourceTree = "<group>"; };
+		040ECA1F26068900002C69A4 /* MockedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedInteractor.swift; sourceTree = "<group>"; };
+		040ECA23260689B5002C69A4 /* MockedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedRouter.swift; sourceTree = "<group>"; };
 		76A9C3C124A40FB4001E707F /* HomeSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSceneViewController.xib; sourceTree = "<group>"; };
 		76C7AE362497AD910053EF25 /* CharacterDetailsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneViewController.swift; sourceTree = "<group>"; };
 		76C7AE372497AD910053EF25 /* CharacterDetailsSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsSceneViewController.xib; sourceTree = "<group>"; };
@@ -236,19 +256,18 @@
 		01D65F7824913A160082F8FF /* The Hitchhiker ProphecyTests */ = {
 			isa = PBXGroup;
 			children = (
-				01D65F7924913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift */,
+				040EC9EA26067A23002C69A4 /* HomeSceneTests */,
 				01D65F7B24913A160082F8FF /* Info.plist */,
 			);
 			path = "The Hitchhiker ProphecyTests";
 			sourceTree = "<group>";
 		};
-		040EC9CC26062045002C69A4 /* CollectionViewLayoutConfigurator */ = {
+		040EC9CC26062045002C69A4 /* CollectionViewLayoutHelper */ = {
 			isa = PBXGroup;
 			children = (
-				049D8A622606107300C26189 /* CollectionViewLayoutState.swift */,
 				040EC9CD26062059002C69A4 /* CollectionViewLayoutHelper.swift */,
 			);
-			path = CollectionViewLayoutConfigurator;
+			path = CollectionViewLayoutHelper;
 			sourceTree = "<group>";
 		};
 		040EC9DD26065E1A002C69A4 /* Utils */ = {
@@ -258,6 +277,57 @@
 				040EC9DE26065E3A002C69A4 /* ShotAnimator.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		040EC9EA26067A23002C69A4 /* HomeSceneTests */ = {
+			isa = PBXGroup;
+			children = (
+				040EC9F226067DED002C69A4 /* ModelsMock.swift */,
+				040ECA14260686DF002C69A4 /* HomeSceneViewControllerTests */,
+				040ECA05260681DD002C69A4 /* HomeSceneRouterTests */,
+				040EC9F626068095002C69A4 /* HomeSceneInteractor */,
+				040EC9EB26067A2C002C69A4 /* HomeScenePresenterTests */,
+			);
+			path = HomeSceneTests;
+			sourceTree = "<group>";
+		};
+		040EC9EB26067A2C002C69A4 /* HomeScenePresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				040EC9E6260679E2002C69A4 /* HomeScenePresenterUnitTests.swift */,
+				040EC9EC26067A45002C69A4 /* HomeSceneMockedView.swift */,
+			);
+			path = HomeScenePresenterTests;
+			sourceTree = "<group>";
+		};
+		040EC9F626068095002C69A4 /* HomeSceneInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				040EC9F7260680B3002C69A4 /* HomeSceneInteractorTests.swift */,
+				040EC9FD260680DF002C69A4 /* MockedWorkers.swift */,
+				040ECA0126068116002C69A4 /* MockedPresenter.swift */,
+			);
+			path = HomeSceneInteractor;
+			sourceTree = "<group>";
+		};
+		040ECA05260681DD002C69A4 /* HomeSceneRouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				040ECA06260681EF002C69A4 /* HomeSceneRouterTests.swift */,
+				040ECA0C260685BE002C69A4 /* MockedDataStore.swift */,
+				040ECA10260685DA002C69A4 /* MockedView.swift */,
+			);
+			path = HomeSceneRouterTests;
+			sourceTree = "<group>";
+		};
+		040ECA14260686DF002C69A4 /* HomeSceneViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				040ECA15260686F3002C69A4 /* HomeSceneViewControllerTests.swift */,
+				040ECA1F26068900002C69A4 /* MockedInteractor.swift */,
+				040ECA23260689B5002C69A4 /* MockedRouter.swift */,
+			);
+			path = HomeSceneViewControllerTests;
 			sourceTree = "<group>";
 		};
 		131A24E62B163026809BB843 /* Frameworks */ = {
@@ -315,7 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				040EC9DD26065E1A002C69A4 /* Utils */,
-				040EC9CC26062045002C69A4 /* CollectionViewLayoutConfigurator */,
+				040EC9CC26062045002C69A4 /* CollectionViewLayoutHelper */,
 				01D65F63249138A30082F8FF /* HomeSceneViewController.swift */,
 				76A9C3C124A40FB4001E707F /* HomeSceneViewController.xib */,
 			);
@@ -551,7 +621,6 @@
 				019ACF862492651D003E3ECF /* Characters.swift in Sources */,
 				01D65F64249138A30082F8FF /* HomeSceneViewController.swift in Sources */,
 				019ACF9524927760003E3ECF /* HomeScene.swift in Sources */,
-				049D8A632606107300C26189 /* CollectionViewLayoutState.swift in Sources */,
 				040EC9DF26065E3A002C69A4 /* ShotAnimator.swift in Sources */,
 				019ACF7824925B32003E3ECF /* NetworkError.swift in Sources */,
 				01AD2906249577B9006AF9D0 /* HomeScenePresenter.swift in Sources */,
@@ -582,7 +651,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01D65F7A24913A160082F8FF /* The_Hitchhiker_ProphecyTests.swift in Sources */,
+				040ECA07260681EF002C69A4 /* HomeSceneRouterTests.swift in Sources */,
+				040ECA0D260685BE002C69A4 /* MockedDataStore.swift in Sources */,
+				040EC9ED26067A45002C69A4 /* HomeSceneMockedView.swift in Sources */,
+				040ECA24260689B5002C69A4 /* MockedRouter.swift in Sources */,
+				040EC9F326067DED002C69A4 /* ModelsMock.swift in Sources */,
+				040EC9F8260680B3002C69A4 /* HomeSceneInteractorTests.swift in Sources */,
+				040ECA0226068116002C69A4 /* MockedPresenter.swift in Sources */,
+				040EC9E7260679E2002C69A4 /* HomeScenePresenterUnitTests.swift in Sources */,
+				040ECA11260685DA002C69A4 /* MockedView.swift in Sources */,
+				040EC9FE260680DF002C69A4 /* MockedWorkers.swift in Sources */,
+				040ECA16260686F3002C69A4 /* HomeSceneViewControllerTests.swift in Sources */,
+				040ECA2026068900002C69A4 /* MockedInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
