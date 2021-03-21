@@ -47,7 +47,7 @@ class HomeSceneViewController: UIViewController {
         super.viewDidLayoutSubviews()
         collectionView.collectionViewLayout = currentCollectionViewLayout()
     }
-    func currentCollectionViewLayout() -> UICollectionViewLayout {
+    private func currentCollectionViewLayout() -> UICollectionViewLayout {
         isHorizontalLayout ? horizontalLayout : verticalLayout
     }
     @objc func switchLayoutHandler(){
