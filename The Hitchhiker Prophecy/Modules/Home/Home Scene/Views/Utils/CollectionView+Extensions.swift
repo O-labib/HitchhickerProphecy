@@ -14,6 +14,7 @@ extension UICollectionView {
     }
     
     /// snap the closest cell to the centre only if collection view has horizontal layout
+    /// this is to make sure cards are peeking from both sides
     func scrollToNearestCellIfHasHorizontalLayout() {
         guard isHorizontal else { return }
         
