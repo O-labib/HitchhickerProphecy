@@ -17,16 +17,18 @@ class HomeSceneViewController: UIViewController {
     // MARK: - Properties
     var interactor: HomeSceneBusinessLogic?
     var router: HomeSceneRoutingLogic?
-    var collectionViewLayoutState: BaseCollectionViewLayoutState?
-    private let shotAnimator = ShotAnimator()
     private var characters = [HomeScene.Search.ViewModel]()
+    private let shotAnimator = ShotAnimator()
+    private var isHorizontalLayout: Bool!
+    private lazy var horizontalLayout = horizontalFlowLayout(for: collectionView)
+    private lazy var verticalLayout = verticalFlowLayout(for: collectionView)
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCellsOnCollectionView()
         fetchCharacters()
-        setupCollectionViewAsHorizontalInitially()
+        setHorizontalCollectionViewLayoutAsDefault()
     }
     private func registerCellsOnCollectionView(){
         collectionView.register(
@@ -38,15 +40,25 @@ class HomeSceneViewController: UIViewController {
         activityIndicator.startAnimating()
         interactor?.fetchCharacters()
     }
-    private func setupCollectionViewAsHorizontalInitially(){
-        collectionViewLayoutState = HorizontalCollectionViewLayoutState(self)
+    private func setHorizontalCollectionViewLayoutAsDefault(){
+        isHorizontalLayout = true
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        collectionViewLayoutState?.setLayout()
+        collectionView.collectionViewLayout = currentCollectionViewLayout()
+    }
+    func currentCollectionViewLayout() -> UICollectionViewLayout {
+        isHorizontalLayout ? horizontalLayout : verticalLayout
     }
     @objc func switchLayoutHandler(){
-        collectionViewLayoutState?.switchLayout()
+        collectionView.setCollectionViewLayout(
+            otherCollectionViewLayout(),
+            animated: true
+        )
+        self.isHorizontalLayout.toggle()
+    }
+    private func otherCollectionViewLayout() -> UICollectionViewLayout {
+        isHorizontalLayout ? verticalLayout : horizontalLayout
     }
 }
 
@@ -67,6 +79,7 @@ extension HomeSceneViewController: HomeSceneDisplayView {
     }
 
     func failedToFetchCharacters(error: Error) {
+        activityIndicator.stopAnimating()
         displayAlert(withError: error)
     }
     private func displayAlert(withError error: Error){
