@@ -35,8 +35,11 @@ class BaseCollectionViewLayoutState: CollectionViewLayoutState {
     }
     
     func switchLayout() {
-        homeSceneViewController?.collectionViewLayoutState = self.otherState()
-        collectionView?.collectionViewLayout = otherLayout()
+        collectionView?.setCollectionViewLayout(
+            otherLayout(),
+            animated: true
+        )
+        self.homeSceneViewController?.collectionViewLayoutState = self.otherState()
     }
     func otherState() -> BaseCollectionViewLayoutState {
         fatalError()
