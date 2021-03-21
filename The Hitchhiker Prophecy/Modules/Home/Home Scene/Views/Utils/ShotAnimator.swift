@@ -13,7 +13,7 @@ class ShotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     var originalFrame = CGRect.zero
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        300
+        100
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -43,7 +43,7 @@ class ShotAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         containerView.addSubview(toView)
         
         // animate views to final state
-        UIView.animate(withDuration: 0.3) {
+        UIView.animate(withDuration: 0.2) {
             toView.transform = .identity
             toView.center = CGPoint(x: finalFrame.midX, y: finalFrame.midY)
         } completion: { (_) in
