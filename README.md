@@ -19,3 +19,8 @@
 
 ### Estimated time:
 10 - 12 h
+
+### Notes:
+* ShotAnimator class is used to implement the transition between the home and details scene
+* CollectionViewLayoutHelper is used for calculating the horizontal and vertical layout of the collection view
+* CollectionViewLayoutAspects is used to store the dimensions of the collection view layout
