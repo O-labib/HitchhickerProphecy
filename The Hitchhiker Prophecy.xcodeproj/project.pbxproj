@@ -281,13 +281,13 @@
 			path = "The Hitchhiker ProphecyTests";
 			sourceTree = "<group>";
 		};
-		040EC9CC26062045002C69A4 /* CollectionViewLayoutHelper */ = {
+		040EC9CC26062045002C69A4 /* CollectionViewLayoutUtils */ = {
 			isa = PBXGroup;
 			children = (
 				040EC9CD26062059002C69A4 /* CollectionViewLayoutHelper.swift */,
 				040ECA812608994D002C69A4 /* CollectionViewLayoutAspects.swift */,
 			);
-			path = CollectionViewLayoutHelper;
+			path = CollectionViewLayoutUtils;
 			sourceTree = "<group>";
 		};
 		040EC9DD26065E1A002C69A4 /* Utils */ = {
@@ -443,7 +443,7 @@
 			isa = PBXGroup;
 			children = (
 				040EC9DD26065E1A002C69A4 /* Utils */,
-				040EC9CC26062045002C69A4 /* CollectionViewLayoutHelper */,
+				040EC9CC26062045002C69A4 /* CollectionViewLayoutUtils */,
 				01D65F63249138A30082F8FF /* HomeSceneViewController.swift */,
 				76A9C3C124A40FB4001E707F /* HomeSceneViewController.xib */,
 			);
