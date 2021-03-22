@@ -32,8 +32,8 @@ class HomeSceneViewController: UIViewController {
     }
     private func registerCellsOnCollectionView(){
         collectionView.register(
-            HomeCharacterCollectionViewCell.nib,
-            forCellWithReuseIdentifier: HomeCharacterCollectionViewCell.id
+            UINib(nibName: String(describing: HomeCharacterCollectionViewCell.self), bundle: nil),
+            forCellWithReuseIdentifier: String(describing: HomeCharacterCollectionViewCell.self)
         )
     }
     private func fetchCharacters(){
@@ -112,7 +112,7 @@ extension HomeSceneViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: HomeCharacterCollectionViewCell.id,
+            withReuseIdentifier: String(describing: HomeCharacterCollectionViewCell.self),
             for: indexPath
         ) as! HomeCharacterCollectionViewCell
         cell.configure(with: characters[indexPath.row])

@@ -9,12 +9,6 @@
 import UIKit
 
 extension HomeCharacterCollectionViewCell {
-    static var id: String = String(describing: HomeCharacterCollectionViewCell.self)
-    private static var nibFileName: String = id
-    static var nib = UINib(nibName: nibFileName, bundle: nil)
-}
-
-extension HomeCharacterCollectionViewCell {
     var imageViewFrameAdjusted: CGRect {
         convert(characterImageView.frame, to: nil)
     }
