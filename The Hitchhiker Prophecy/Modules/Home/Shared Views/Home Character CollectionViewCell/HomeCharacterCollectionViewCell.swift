@@ -8,16 +8,10 @@
 
 import UIKit
 
-extension HomeCharacterCollectionViewCell {
-    var imageViewFrameAdjusted: CGRect {
-        convert(characterImageView.frame, to: nil)
-    }
-}
-
 class HomeCharacterCollectionViewCell: UICollectionViewCell {
     // MARK: - Outlets
     @IBOutlet private weak var characterNameLabel: UILabel!
-    @IBOutlet private weak var characterImageView: UIImageView!
+    @IBOutlet weak var characterImageView: UIImageView!
     
     // MARK: - Life Cycle
     override func awakeFromNib() {
