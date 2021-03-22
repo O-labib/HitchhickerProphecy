@@ -9,6 +9,7 @@
 import UIKit
 
 extension HomeCharacterCollectionViewCell {
+    /// returns the image view frame with respect to the window coordinates
     var imageViewFrameAdjusted: CGRect {
         convert(characterImageView.frame, to: nil)
     }
