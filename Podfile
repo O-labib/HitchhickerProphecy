@@ -7,4 +7,8 @@ target 'The Hitchhiker Prophecy' do
   # Pods for The Hitchhiker Prophecy
   pod 'Alamofire', '4.7.3'
   pod 'AlamofireImage', '3.4.1'
+  
+  target 'The Hitchhiker ProphecyTests' do
+    pod "SwiftyMocky"
+  end
 end
