@@ -70,6 +70,7 @@
 		A9F01E9724E1ED9B0034ABB9 /* AppLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */; };
 		A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */; };
 		B69BAE7C2688A37000A4C77E /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BAE7B2688A37000A4C77E /* Mock.generated.swift */; };
+		B69BAE7F2688A4F900A4C77E /* HomeSceneTests+SwiftyMocky.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69BAE7E2688A4F900A4C77E /* HomeSceneTests+SwiftyMocky.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +151,7 @@
 		A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLibraryManager.swift; sourceTree = "<group>"; };
 		A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
 		B69BAE7B2688A37000A4C77E /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		B69BAE7E2688A4F900A4C77E /* HomeSceneTests+SwiftyMocky.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeSceneTests+SwiftyMocky.swift"; sourceTree = "<group>"; };
 		C3450DE4CFF20A0A4B1ABA8F /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
 		DCA1AE984C561286EA600F4E /* Pods_The_Hitchhiker_Prophecy_The_Hitchhiker_ProphecyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Hitchhiker_Prophecy_The_Hitchhiker_ProphecyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E5FE548ED38E3378377CEA /* Pods_The_Hitchhiker_Prophecy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Hitchhiker_Prophecy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -351,6 +353,7 @@
 		040ECA14260686DF002C69A4 /* HomeSceneViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
+				B69BAE7D2688A4CE00A4C77E /* SwiftyMocky */,
 				040ECA15260686F3002C69A4 /* HomeSceneViewControllerTests.swift */,
 				040ECA1F26068900002C69A4 /* MockedHomeSceneInteractor.swift */,
 				040ECA23260689B5002C69A4 /* MockedHomeSceneRouterRouter.swift */,
@@ -520,6 +523,14 @@
 				76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		B69BAE7D2688A4CE00A4C77E /* SwiftyMocky */ = {
+			isa = PBXGroup;
+			children = (
+				B69BAE7E2688A4F900A4C77E /* HomeSceneTests+SwiftyMocky.swift */,
+			);
+			path = SwiftyMocky;
 			sourceTree = "<group>";
 		};
 		EE489723C61A1E6A67306417 /* Pods */ = {
@@ -764,6 +775,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B69BAE7F2688A4F900A4C77E /* HomeSceneTests+SwiftyMocky.swift in Sources */,
 				040ECA512607EC63002C69A4 /* CharacterDetailsPresenterTests.swift in Sources */,
 				040ECA07260681EF002C69A4 /* HomeSceneRouterTests.swift in Sources */,
 				040ECA402607E9EF002C69A4 /* MockedCharacterDetailsInteractor.swift in Sources */,
