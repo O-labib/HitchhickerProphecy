@@ -1,0 +1,13 @@
+sourceryCommand: null
+sourceryTemplate: null
+The Hitchhiker ProphecyTests:
+  sources:
+    include:
+    - ./The Hitchhiker Prophecy
+  output: ./The Hitchhiker ProphecyTests/Mock.generated.swift
+  targets:
+  - The Hitchhiker ProphecyTests
+  testable:
+  - The Hitchhiker Prophecy
+  import:
+  - Foundation
