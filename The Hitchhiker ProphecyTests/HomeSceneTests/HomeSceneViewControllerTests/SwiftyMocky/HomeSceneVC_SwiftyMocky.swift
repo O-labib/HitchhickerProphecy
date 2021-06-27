@@ -10,7 +10,7 @@ import XCTest
 import SwiftyMocky
 @testable import The_Hitchhiker_Prophecy
 
-class HomeSceneTests_SwiftyMocky: XCTestCase {
+class HomeSceneVC_SwiftyMocky: XCTestCase {
 
     let homeSceneVc = HomeSceneViewController()
     let router = HomeSceneRoutingLogicMock()
