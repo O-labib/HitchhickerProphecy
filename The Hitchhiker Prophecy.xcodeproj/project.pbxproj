@@ -65,6 +65,7 @@
 		76C7AE482497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE472497B8F20053EF25 /* CharacterDetailsSceneInteractor.swift */; };
 		76C7AE4A2497BBD40053EF25 /* CharacterDetailsScenePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */; };
 		76C7AE4F249803460053EF25 /* HomeCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */; };
+		7E218DDB1CF1161BE40B30FD /* Pods_The_Hitchhiker_Prophecy_The_Hitchhiker_ProphecyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA1AE984C561286EA600F4E /* Pods_The_Hitchhiker_Prophecy_The_Hitchhiker_ProphecyTests.framework */; };
 		A9F01E9524E1ED350034ABB9 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */; };
 		A9F01E9724E1ED9B0034ABB9 /* AppLibraryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */; };
 		A9F01E9924E1EE560034ABB9 /* AppWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */; };
@@ -131,6 +132,7 @@
 		040ECA732607EF1C002C69A4 /* MockedCharacterDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedCharacterDetailsPresenter.swift; sourceTree = "<group>"; };
 		040ECA812608994D002C69A4 /* CollectionViewLayoutAspects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayoutAspects.swift; sourceTree = "<group>"; };
 		040ECA8626089B5F002C69A4 /* HomeCharacterCollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeCharacterCollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		5710D13E8E05279D4A23A498 /* Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.debug.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		76A9C3C124A40FB4001E707F /* HomeSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSceneViewController.xib; sourceTree = "<group>"; };
 		76C7AE362497AD910053EF25 /* CharacterDetailsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsSceneViewController.swift; sourceTree = "<group>"; };
 		76C7AE372497AD910053EF25 /* CharacterDetailsSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterDetailsSceneViewController.xib; sourceTree = "<group>"; };
@@ -142,10 +144,12 @@
 		76C7AE492497BBD40053EF25 /* CharacterDetailsScenePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsScenePresenter.swift; sourceTree = "<group>"; };
 		76C7AE4D249803460053EF25 /* HomeCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		76C7AE4E249803460053EF25 /* HomeCharacterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCharacterCollectionViewCell.xib; sourceTree = "<group>"; };
+		8F160E531AA1A2FD4BB96025 /* Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.release.xcconfig"; sourceTree = "<group>"; };
 		A9F01E9424E1ED350034ABB9 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		A9F01E9624E1ED9B0034ABB9 /* AppLibraryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLibraryManager.swift; sourceTree = "<group>"; };
 		A9F01E9824E1EE560034ABB9 /* AppWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindowManager.swift; sourceTree = "<group>"; };
 		C3450DE4CFF20A0A4B1ABA8F /* Pods-The Hitchhiker Prophecy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.release.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.release.xcconfig"; sourceTree = "<group>"; };
+		DCA1AE984C561286EA600F4E /* Pods_The_Hitchhiker_Prophecy_The_Hitchhiker_ProphecyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Hitchhiker_Prophecy_The_Hitchhiker_ProphecyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E5FE548ED38E3378377CEA /* Pods_The_Hitchhiker_Prophecy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Hitchhiker_Prophecy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40D6FF0DB54D91C541906E8 /* Pods-The Hitchhiker Prophecy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Hitchhiker Prophecy.debug.xcconfig"; path = "Target Support Files/Pods-The Hitchhiker Prophecy/Pods-The Hitchhiker Prophecy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +167,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E218DDB1CF1161BE40B30FD /* Pods_The_Hitchhiker_Prophecy_The_Hitchhiker_ProphecyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				F1E5FE548ED38E3378377CEA /* Pods_The_Hitchhiker_Prophecy.framework */,
+				DCA1AE984C561286EA600F4E /* Pods_The_Hitchhiker_Prophecy_The_Hitchhiker_ProphecyTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -518,6 +524,8 @@
 			children = (
 				F40D6FF0DB54D91C541906E8 /* Pods-The Hitchhiker Prophecy.debug.xcconfig */,
 				C3450DE4CFF20A0A4B1ABA8F /* Pods-The Hitchhiker Prophecy.release.xcconfig */,
+				5710D13E8E05279D4A23A498 /* Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.debug.xcconfig */,
+				8F160E531AA1A2FD4BB96025 /* Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -548,9 +556,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01D65F8024913A160082F8FF /* Build configuration list for PBXNativeTarget "The Hitchhiker ProphecyTests" */;
 			buildPhases = (
+				18C670B7839CEE8E69B4BDC8 /* [CP] Check Pods Manifest.lock */,
 				01D65F7324913A160082F8FF /* Sources */,
 				01D65F7424913A160082F8FF /* Frameworks */,
 				01D65F7524913A160082F8FF /* Resources */,
+				FBF2967FA761A51899FF2679 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -623,6 +633,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18C670B7839CEE8E69B4BDC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C8C73319CE8C36B233D80F0F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -660,6 +692,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBF2967FA761A51899FF2679 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests/Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -912,6 +961,7 @@
 		};
 		01D65F7E24913A160082F8FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5710D13E8E05279D4A23A498 /* Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -931,6 +981,7 @@
 		};
 		01D65F7F24913A160082F8FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F160E531AA1A2FD4BB96025 /* Pods-The Hitchhiker Prophecy-The Hitchhiker ProphecyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

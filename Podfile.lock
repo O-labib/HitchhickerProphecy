@@ -2,20 +2,28 @@ PODS:
   - Alamofire (4.7.3)
   - AlamofireImage (3.4.1):
     - Alamofire (~> 4.7)
+  - Sourcery (1.0.3)
+  - SwiftyMocky (4.0.4):
+    - Sourcery (~> 1.0.2)
 
 DEPENDENCIES:
   - Alamofire (= 4.7.3)
   - AlamofireImage (= 3.4.1)
+  - SwiftyMocky
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireImage
+    - Sourcery
+    - SwiftyMocky
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  Sourcery: 70a6048014bd4f37ea80e6bd4354d47bf3b760e1
+  SwiftyMocky: 1fb3ceca9ded134dad4da58a0f20023d7f685ccf
 
-PODFILE CHECKSUM: 57b28c7de3b5f314017371ce7cf01d863092a213
+PODFILE CHECKSUM: b6f40c47c6dda883029a46c3f167a4edb891b6d1
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
